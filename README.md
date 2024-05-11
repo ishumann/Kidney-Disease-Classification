@@ -16,28 +16,71 @@
 
 
 
-# How to run?
-### STEPS:
+## How to run?
 
-Clone the repository
+### STEP 01: Clone the repository
 
 ```bash
 https://github.com/ishumann/Kidney-Disease-Classification
 ```
-### STEP 01- Create a conda environment after opening the repository
+### STEP 02: Create a conda environment after opening the repository
 
 ```bash
 conda create -n kidney python=3.8 -y
 ```
-
 ```bash
 conda activate kidney
 ```
 
+### OR
 
-### STEP 02- install the requirements
+### STEP 02: Create a conda Virtual environment (venv) after opening the repository
+
+```bash
+conda create -p kidney python=3.8 -y
+```
+
+
+
+### STEP 03: install the requirements
+
 ```bash
 pip install -r requirements.txt
 ```
 
+
+## Perform MLOps
+
+### STEP 01: MLflow
+
+- [Documentation](https://mlflow.org/docs/latest/index.html)
+
+
+```bash
+mlflow ui
+```
+### STEP 02:  Dagshub
+[dagshub](https://dagshub.com/)
+```
+MLFLOW_TRACKING_URI=https://dagshub.com/ishumann/Kidney-Disease-Classification.mlflow \
+
+MLFLOW_TRACKING_USERNAME=ishumannnn \
+
+MLFLOW_TRACKING_PASSWORD=756f1a4bbd0ec7f0738d710bb309a2e89d0b11cf \
+python script.py \
+```
+
+> note: this credintials are not real. Create your own account and get the credintials from dagshub.
+
+
+### STEP 03: Run this to export as env variables.
+
+```bash
+
+export MLFLOW_TRACKING_URI=https://dagshub.com/ishumann/Kidney-Disease-Classification.mlflow
+
+export MLFLOW_TRACKING_USERNAME=ishumannnn
+
+export MLFLOW_TRACKING_PASSWORD=756f1a4bbd0ec7f0738d710bb309a2e89d0b11cf 
+```
 
