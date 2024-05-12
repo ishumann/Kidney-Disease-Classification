@@ -16,7 +16,7 @@ class EvaluationPipeline:
         evaluation = Evaluation(eval_config)
         evaluation.evaluation()
         evaluation.save_score()
-        evaluation.log_into_mlflow()
+        # evaluation.log_into_mlflow() # Use MLflow when reseraching for best model
 
 
 if __name__ == '__main__':
