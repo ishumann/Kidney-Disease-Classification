@@ -62,13 +62,15 @@ mlflow ui
 ### STEP 02:  Dagshub
 [dagshub](https://dagshub.com/)
 ```
-MLFLOW_TRACKING_URI=https://dagshub.com/ishumann/Kidney-Disease-Classification.mlflow \
 
-MLFLOW_TRACKING_USERNAME=ishumannnn \
-
-MLFLOW_TRACKING_PASSWORD=756f1a4bbd0ec7f0738d710bb309a2e89d0b11cf \
+export MLFLOW_TRACKING_URI=https://dagshub.com/ishumann/Kidney-Disease-Classification.mlflow
+export MLFLOW_TRACKING_USERNAME=ishumann
+export  MLFLOW_TRACKING_PASSWORD=15495e98cd344df629c4d470b95d7bac88585699
 python script.py \
 ```
+
+
+
 
 > note: this credintials are not real. Create your own account and get the credintials from dagshub.
 
